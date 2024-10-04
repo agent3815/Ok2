@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С Днем Учителя</title>
+    <link rel="stylesheet" href="teacher style.css">
+</head>
+<body>
+    <div class="ok">
+        <h3 id="greeting" class="greeting"></h3> <!-- Имя будет выведено здесь -->
+
+        <img src="https://3d-galleru.ru/cards/17/83/17y76c2o7y5935ss/s-dnem-uchitelya.gif" alt="  " id="imageToLoad" class="imageToLoad">
+    </div>
+    <script>
+        // Извлекаем имя и пол из localStorage
+        var userName = localStorage.getItem('userName');
+        var userGender = localStorage.getItem('userGender');
+        
+        // Если имя есть, выводим его в <h3> с учетом пола
+        if (userName && userGender) {
+            if(userGender === "Мужской"){
+                document.getElementById('greeting').textContent = "Дорогой " + userName + ', от всего 9-В класса, поздравляем вас с Днем Учителя!';
+            }
+            else if(userGender === "Женский"){
+                document.getElementById('greeting').textContent = "Дорогая " + userName + ', от всего 9-В класса, поздравляем вас с Днем Учителя!';
+            }
+        } 
+        else {
+            alert("Введите имя и выберите пол!");
+        }
+    </script>
+
+    <script>
+        var img = document.getElementById('imageToLoad');
+
+        // Событие срабатывает, если изображение загружено успешно
+        img.onload = function() {
+            console.log('Изображение успешно загружено.');
+        };
+
+        // Событие срабатывает, если возникла ошибка при загрузке изображения
+        img.onerror = function() {
+            console.log('Ошибка: не удалось загрузить изображение.');
+            // Можно заменить изображение на резервное
+            img.src = 'tch.gif'; // Замена на другое изображение
+        };
+    </script>
+
+</body>
+</html>

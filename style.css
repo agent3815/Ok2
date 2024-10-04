@@ -1,0 +1,97 @@
+/* body{
+  background: linear-gradient(135deg, #1f3b73, #3e6099, #637fbb, #8aa0d6, #b1c1ec);
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+} */
+
+/* Центрируем всю форму на странице */
+body {
+  /* background: rgb(141, 209, 117);
+  background: -moz-linear-gradient(135deg, rgba(141, 209, 117, 1) 10%, rgba(207, 210, 129, 1) 91%);
+  background: -webkit-linear-gradient(135deg, rgba(141, 209, 117, 1) 10%, rgba(207, 210, 129, 1) 91%);
+  background: linear-gradient(135deg, rgba(141, 209, 117, 1) 10%, rgba(207, 210, 129, 1) 91%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8dd175", endColorstr="#cfd281", GradientType=1); */
+
+  background-image: url('image4.png');
+  /* Укажите путь к вашему изображению */
+  background-size: cover;
+  /* Изображение будет масштабироваться, чтобы покрыть весь экран */
+  background-position: center;
+  /* Изображение будет центрироваться по экрану */
+  background-repeat: no-repeat;
+  /* Изображение не будет повторяться */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* Высота экрана */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Стили для формы */
+.forma {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background: linear-gradient(135deg, #1f3b73, #3e6099, #637fbb, #8aa0d6, #b1c1ec); */
+
+
+  /* background: rgb(120, 204, 153);
+  background: -moz-linear-gradient(135deg, rgba(120, 204, 153, 1) 10%, rgba(140, 166, 224, 1) 91%);
+  background: -webkit-linear-gradient(135deg, rgba(120, 204, 153, 1) 10%, rgba(140, 166, 224, 1) 91%);
+  background: linear-gradient(135deg, rgba(120, 204, 153, 1) 10%, rgba(140, 166, 224, 1) 91%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#78cc99", endColorstr="#8ca6e0", GradientType=1); */
+
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+
+  padding: 20px;
+  border-radius: 15px;
+  /* Более плавные закругленные углы */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  /* Тень для объема */
+  width: 350px;
+  /* Ширина формы */
+}
+
+/* Стили для всех элементов формы */
+input[type="text"],
+input[type="submit"],
+input[type="radio"] {
+  margin-bottom: 15px;
+}
+
+/* Центрируем текст */
+label,
+h3 {
+  text-align: center;
+}
+
+/* Ширина полей ввода */
+input[type="text"] {
+  width: 100%;
+  /* Поля ввода занимают всю ширину формы */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Стили для кнопки отправки */
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}

@@ -1,0 +1,65 @@
+/* Центрируем содержимое страницы */
+body {
+  background-image: url('image4.png'); /* Замените на ваш путь к изображению */
+  background-size: 100% 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff; /* Белый текст */
+}
+
+/* Стили для блока приветствия */
+.greeting {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+/* Стили для изображения */
+.imageToLoad {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тень для объема */
+  position: relative;
+}
+
+/* Блок приветствия и изображения */
+.container {
+  background-color: rgba(255, 255, 255, 0.3); /* Прозрачный белый фон */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+}
+
+.ok{
+  position: relative;
+  bottom: 2cm;
+}
+
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  #greeting {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>main</title>
+</head>
+<body>
+    <form action="index.html" class="forma" onsubmit="return AddName(this)" method="post">
+        <label for="name" class="LName">Введите имя и фамилию</label>
+        <input type="text" name="name" placeholder="name" id="name" class="name"> 
+
+        <h3 class="gender">Выберете пол</h3>
+        <label for="mann" class="LMann">Мужской</label>
+        <input type="radio" name="gender" id="mann" value="Мужской" class="mann">
+
+        <label for="frau" class="LFrau">Женский</label>
+        <input type="radio" name="gender" id="frau" value="Женский" class="frau">
+
+        <input type="submit" name="submit" value="Ввести">
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
